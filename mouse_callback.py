@@ -1,7 +1,7 @@
 import cv2
 import matplotlib.pyplot as plt
 
-img = cv2.imread("garden.jpg",1)
+img = cv2.imread("balloon.jpeg",1)
 plt.xticks([1,2,3], ['Blue','Green','Red'])
 i=0
 
@@ -11,7 +11,7 @@ def getcolor(event, x,y, flags, param):
 		plt.plot([1,2,3], img[y,x])
 #		plt.bar([1,2,3], img[y,x], color=['blue', 'green', 'red'])
 		i=i+1
-		plt.savefig('plot'+str(i) +'.png')
+		plt.savefig('./plot/plot'+str(i) +'.png')
 #		plot = cv2.imread('plot'+str(i) +'.png',1)		
 #		cv2.imshow('plot', plot)
 #		plt.show()
@@ -21,7 +21,7 @@ cv2.namedWindow('image')
 cv2.setMouseCallback('image', getcolor)
 
 cv2.imshow('image', img)
-cv2.waitKey(1000)
+cv2.waitKey(10000)
 
 cv2.destroyAllWindows()
 print(i)
