@@ -1,7 +1,7 @@
 import cv2
-
-# face_data  = cv2.CascadeClassifier("C:/umesh/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml")
-face_data  = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+import os
+face_data  = cv2.CascadeClassifier(os.getcwd()+"\haarcascade_frontalface_default.xml")
+#face_data  = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 print(face_data)
 cap = cv2.VideoCapture(0)
 

@@ -3,7 +3,6 @@ This python program is used to implant a balloon image
 over the landscape image
 Shows the procejure to extract the balloon from the background using threshold and bitwise method
 and add to the landscape image
-
 """
 
 import cv2
